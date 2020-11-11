@@ -1,0 +1,24 @@
+type Location {
+    latitude: Float
+    longitude: Float
+}
+
+type Residence {
+	id: ID
+    zipCode: String
+    residenceNumber: String
+    residentsAmount: String
+    location: Location
+}
+
+input LocationInput {
+    latitude: Float!
+    longitude: Float!
+}
+
+input ResidenceInput {
+    zipCode: String!
+    residenceNumber: String!
+    residentsAmount: String!
+    location: LocationInput!
+}

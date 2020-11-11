@@ -1,0 +1,4 @@
+type Mutation {
+    saveResidence(residence: ResidenceInput): Residence
+    removeResidence(id: ID): Boolean
+}
